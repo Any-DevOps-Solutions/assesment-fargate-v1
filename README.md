@@ -40,11 +40,15 @@ Optional
 
 ## Deploy
 
-TODO: Document how to run
+* Install Terraform v0.11.15-oci
+* Update terraform/aws/locals.tf and terraform/aws/container_definitions.json related your service
+* Execute make deploy
 
 ## Test the whole setup
 
-TODO: Document how to test the setup
+* Install Terraform Unit Testing
+* Execute make test
+
 
 ## Note
 
