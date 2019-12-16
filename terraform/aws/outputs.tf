@@ -105,3 +105,7 @@ output "iam_policy_path" {
 output "iam_policy_document" {
   value = "${module.ecs_fargate.iam_policy_document}"
 }
+
+output "url" {
+  value = "$(module.alb.alb_dns_name}"
+}

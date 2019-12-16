@@ -12,6 +12,9 @@ deploy: ## Deploy Infrastructure
 
 test: ## Test infrastructure
 	@echo "Run the tests"
+	@cd tests
+	@go test -v
+
 
 cleanup: ## Cleanup Infrastructure
 	@echo "Cleanup infrastructure"
