@@ -33,20 +33,17 @@ The task objectives were as follows:
 
 Optional
 
-* Test Infrastructure (you can choose one or more test frameworks)
-	* [Terraform BDD Testing](https://github.com/eerkunt/terraform-compliance)
-	* [Terraform Unit Testing](https://github.com/bsnape/rspec-terraform)
-	* [Terraform Ultimate Testing](https://github.com/bsnape/rspec-terraform)
+* Test Infrastructure: https://github.com/gruntwork-io/terratest
 
 ## Deploy
 
 * Install Terraform v0.11.15-oci
+* Install golang for terratest
 * Update terraform/aws/locals.tf and terraform/aws/container_definitions.json related your service
 * Execute make deploy
 
 ## Test the whole setup
 
-* Install Terraform Unit Testing
 * Execute make test
 
 
