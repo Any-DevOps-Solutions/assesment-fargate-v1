@@ -9,12 +9,17 @@ help:
 
 deploy: ## Deploy Infrastructure
 	@echo "Deploy infrastructure"
+	@cd terraform/aws
+	@terraform plan -out=plan.out
+	@terraform apply plan.out
 
 test: ## Test infrastructure
 	@echo "Run the tests"
 	@cd tests
-	@go test -v
+	@go test -v -run TestFargate
 
 
 cleanup: ## Cleanup Infrastructure
 	@echo "Cleanup infrastructure"
+	@cd terraform/aws
+	@terraform destroy
